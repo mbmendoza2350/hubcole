@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f9d5e5 0%, #f0c3c7 100%);
+  font-family: 'Montserrat', sans-serif;
+  color: #5a2a6e;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(90, 42, 110, 0.3);
+  margin: 50px auto 70px;
+  text-align: center;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.8rem;
+  margin-bottom: 0.2em;
+  color: #b7428c;
+  text-shadow: 1px 1px 3px rgba(181, 66, 140, 0.5);
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 1.3em 0;
+  font-weight: 500;
+}
+
+.firma {
+  margin-top: 3em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #a33172;
+}
+
+/* Botón rosa */
+.btn-comenzar {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 40px;
+  background: #e86ca1;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(232, 108, 161, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-comenzar:hover {
+  background-color: #d1538a;
+  transform: scale(1.05);
+}
+
+/* Sección fotos */
+#fotos {
+  max-width: 800px;
+  margin: 50px auto 70px;
+  padding: 20px;
+  text-align: center;
+  color: #5a2a6e;
+}
+
+#fotos h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #b7428c;
+  text-shadow: 1px 1px 3px rgba(181, 66, 140, 0.5);
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(90, 42, 110, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .firma {
+    font-size: 1.4rem;
+  }
+
+  .galeria img {
+    width: 140px;
+    height: 140px;
+  }
+}
